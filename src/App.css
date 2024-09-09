@@ -1,0 +1,76 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #b1c6db;
+  
+  
+}
+
+.App {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #dfb0b0;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #e46363;
+  border-top: none;
+}
+
+.meal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #3f1e1e;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  color: rgb(11, 2, 2);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-to-week {
+  background-color: #9aabbf;
+}
+
+.delete-meal {
+  background-color: #f5adb5;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    font-size: 14px;
+  }
+}
